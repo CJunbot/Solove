@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    list-style: none;
+    text-emphasis: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navigation bar */
+.navbar_menu a {
+    color: white;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.navbar_icons a {
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(83, 55, 150);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.473);
+    padding: 8px 12px;
+}
+
+.navbar_logo {
+    font-size: 24px;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+    border-radius: 4px;
+    background-color:#e1b5ff21;
+}
+
+.navbar_icons {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+}
+
+.navbar_toggle {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_toggle {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display:flex;
+    }
+}
+/* Home */
+.main {
+    padding-top: 20px;
+}
+
+/* Home visible box 1000X700 px */
+.slide_box{
+   width: 1000px;
+   height: 700px;
+   position: absolute;
+   left: 50%;
+   margin-left: -500px;
+   top: 150px;
+   overflow: hidden;
+
+   z-index: -1;
+}
+
+/* Home invisible box */
+.slide_wrap{
+    display: flex;
+    width: 5000px;
+    margin: 0;
+    padding: 0;
+}
+.slide_item{
+    display: flex;
+    width: 1000px;
+    list-style: none;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+
+.slide_item image{
+    display: flex;
+    width: 1000px;
+    height: 700px;
+}
+
+/* Slid button */
+.buttons{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+}
+.buttons button{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.55);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
