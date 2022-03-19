@@ -12,6 +12,8 @@ a {
     text-decoration: none;
 }
 
+input, textarea, button, html { appearance: none; -moz-appearance: none; -webkit-appearance: none; -o-appearance: none; border: none; border-radius: 0; -webkit-border-radius: 0; -moz-border-radius: 0; }
+
 h1{
     font-size: 1.5rem;
 }
@@ -163,9 +165,22 @@ header{
     justify-content: center;
 }
 
+.home_earth{
+    display: flex;
+    margin: auto;
+    position: absolute;
+    justify-content: center;
+    height: 1000px;
+    transform: translateX(-22px);
+}
+
+.home_earth img{
+    height: 1000px;
+}
+
 .home_logo{
     position: absolute;
-    text-align: center;
+    justify-content: center;
     margin-top: 250px;
 }
 
@@ -200,12 +215,20 @@ header{
         height: 800px;
     }
 
+    .home_earth{
+        height: 800px;
+    }
+
+    .home_earth img{
+        height: 800px;
+    }
+
     .home_logo img{
         width: 300px;
         height: max-content;
     }
     .home_text{
-        margin-top: 300px;
+        margin-top: 350px;
     }
 }
 
@@ -238,7 +261,7 @@ header{
 
 @media screen and (max-width:768px) {
     .stage {
-        height: 800px;
+        height: 750px;
     }
 }
 
