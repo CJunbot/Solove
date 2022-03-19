@@ -191,16 +191,13 @@ header{
 }
 
 @media screen and (max-width:768px) {
-    .home_wrap img{
-        height: 600px;
-        margin-top: 200px;}
-        
-    .home_wrap {
-        height: 800px;
-    }
 
     .home_logo{
-        margin-top: 20px;
+        margin-top: 150px;
+    }
+
+    .home_wrap {
+        height: 800px;
     }
 
     .home_logo img{
@@ -208,7 +205,7 @@ header{
         height: max-content;
     }
     .home_text{
-        margin-top: 400px;
+        margin-top: 300px;
     }
 }
 
@@ -241,7 +238,7 @@ header{
 
 @media screen and (max-width:768px) {
     .stage {
-        height: 850px;
+        height: 800px;
     }
 }
 
