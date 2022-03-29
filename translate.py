@@ -34,7 +34,7 @@ for i in range(1,100):
         od['seller_fee_basis_points']= dict['seller_fee_basis_points']
         od['image']=dict['image']
         od['attributes']=dict['attributes']
-        od['property']=dict['property']
+        od['properties']=dict['property']
         od['collection']=dict['collection']
 
 
