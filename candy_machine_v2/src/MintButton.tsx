@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import Button from '@material-ui/core/Button';
 import {CircularProgress, Paper} from '@material-ui/core';
 import {GatewayStatus, useGateway} from '@civic/solana-gateway-react';
@@ -14,7 +14,7 @@ const Image = styled.img`
 export const CTAButton = styled(Button)`
   display: block !important;
   margin: 0 auto !important;
-  background-color: #946cee !important;
+  background-color: white !important;
   min-width: 120px !important;
   font-size: 1em !important;
 `;
@@ -24,7 +24,7 @@ export const MintButton = ({
                                candyMachine,
                                isMinting,
                                isActive,
-                               isSoldOut,
+                               isSoldOut
                            }: {
     onMint: () => Promise<void>;
     candyMachine: CandyMachine | undefined;
@@ -35,7 +35,6 @@ export const MintButton = ({
     const {requestGatewayToken, gatewayStatus} = useGateway();
     const [clicked, setClicked] = useState(false);
     const [isVerifying, setIsVerifying] = useState(false);
-
 
     useEffect(() => {
         setIsVerifying(false);

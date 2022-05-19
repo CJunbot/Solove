@@ -11,17 +11,20 @@ import {
     getPhantomWallet,
     getSlopeWallet,
     getSolflareWallet,
+    getSolflareWebWallet,
     getSolletWallet,
     getSolletExtensionWallet,
+    getSolongWallet,
+    getLedgerWallet,
+    getSafePalWallet,
 } from "@solana/wallet-adapter-wallets";
 
-// import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
-
-import {WalletModalProvider } from '@solana/wallet-adapter-react-ui';
+import {
+    WalletModalProvider
+} from '@solana/wallet-adapter-react-ui';
 
 import "./App.css";
 import Home from "./Home";
-
 
 require('@solana/wallet-adapter-react-ui/styles.css');
 
@@ -74,8 +77,12 @@ const App = () => {
             getPhantomWallet(),
             getSlopeWallet(),
             getSolflareWallet(),
+            getSolflareWebWallet(),
             getSolletWallet({ network }),
             getSolletExtensionWallet({ network }),
+            getSolongWallet(),
+            getLedgerWallet(),
+            getSafePalWallet(),
         ],
         []
     );
@@ -85,7 +92,12 @@ const App = () => {
         <ConnectionProvider endpoint={endpoint}>
           <WalletProvider wallets={wallets} autoConnect={true}>
             <WalletModalProvider>
-                <Home candyMachineId={candyMachineId} connection={connection} txTimeout={txTimeout} rpcHost={rpcHost}/>
+              <Home
+                candyMachineId={candyMachineId}
+                connection={connection}
+                txTimeout={txTimeout}
+                rpcHost={rpcHost}
+              />
             </WalletModalProvider>
           </WalletProvider>
         </ConnectionProvider>
