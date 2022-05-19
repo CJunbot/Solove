@@ -1,0 +1,26 @@
+/* Customize your main colors in :root variables */
+/*--card-background-color: #946cee; */
+
+:root {
+  --main-background-color: #946cee;
+  --card-background-lighter-color: #946cee;
+  --main-text-color:#F7F6F4;
+  --title-text-color:#F7F6F4;
+}
+
+body{
+  background-color:var(--main-background-color);
+  font-family:  'Roboto Serif', sans-serif, 'Patrick Hand', cursive;
+  font-size: 1.2em;
+}
+
+h2, p{
+  color: var(--main-text-color);
+}
+
+h3{
+font-weight: normal;
+}
+
+
+
