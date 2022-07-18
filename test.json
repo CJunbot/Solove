@@ -3,7 +3,7 @@
     "symbol": "hi",
     "description": "Remember to replace this description",
     "seller_fee_basis_points": 500,
-    "image": "test.png",
+    "image": "https://github.com/CJunbot/Solove/blob/main/test.jpg",
     "attributes": [
     ],
     "properties": {
