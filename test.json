@@ -1,0 +1,27 @@
+{
+    "name": "Your Collection #0",
+    "symbol": "hi",
+    "description": "Remember to replace this description",
+    "seller_fee_basis_points": 500,
+    "image": "test.png",
+    "attributes": [
+    ],
+    "properties": {
+        "creators": [
+            {
+                "address": "N4f6zftYsuu4yT7icsjLwh4i6pB1zvvKbseHj2NmSQw",
+                "share": 100
+            }
+        ],
+        "files": [
+            {
+                "uri": "0.png",
+                "type": "image/png"
+            }
+        ]
+    },
+    "collection": {
+        "name": "numbers",
+        "family": "numbers"
+    }
+}
